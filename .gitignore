@@ -1,0 +1,42 @@
+# =========================
+# Environment variables
+# =========================
+.env
+**/.env
+
+
+# =========================
+# Python virtual environments
+# =========================
+venv/
+.venv/
+**/venv/
+**/.venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+
+# =========================
+# ChromaDB and uploaded PDFs
+# =========================
+ai-service/data/chroma_db/
+ai-service/data/pdfs/*.pdf
+
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+
+# =========================
+# Editors
+# =========================
+.vscode/
+.idea/
