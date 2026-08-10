@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.document_routes import router as document_router
+
 
 app = FastAPI(
     title="Advanced RAG AI Service",
@@ -15,6 +17,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+app.include_router(document_router)
 
 
 @app.get("/")
